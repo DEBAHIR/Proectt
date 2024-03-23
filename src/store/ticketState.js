@@ -6,7 +6,7 @@ export const ticketState = {
     },
     mutations: {
         ADD_TICKET(state, payload) {
-            let date = Date.now(); // Get the current timestamp in milliseconds
+            let date = Date.now();
             const ticket = {
                 id: date,
                 summary: payload.summary,
@@ -14,7 +14,7 @@ export const ticketState = {
                 priority: payload.priority,
                 content: payload.content,
                 from: payload.from,
-                create_date: date, // Store the timestamp in milliseconds
+                create_date: date, 
                 update_date: "",
                 answ: ""
             };
